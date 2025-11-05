@@ -1,0 +1,8 @@
+setTimeout(() => {
+  if (messagesContainerRef.current) {
+    messagesContainerRef.current.scrollTo({
+      top: messagesContainerRef.current.scrollHeight,
+      behavior: "smooth",
+    });
+  }
+}, 100);
